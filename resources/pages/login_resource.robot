@@ -3,8 +3,10 @@ Documentation       Ações da página de login
 
 ***Keywords***
 Open Login Page
-    # New Page        https://parodify.herokuapp.com/users/sign_in
-    Open Browser    https://parodify.herokuapp.com/users/sign_in    chromium
+    # Keyword para definir o browser e se ele vai executar em headless ou não
+    New Browser     ${browser}    ${headless}
+    New Page        https://parodify.herokuapp.com/users/sign_in
+    # Open Browser    https://parodify.herokuapp.com/users/sign_in    chromium
     Get Text        label[for=user_email]    contains    Email
 
 Login With

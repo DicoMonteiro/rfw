@@ -13,3 +13,7 @@
 # Execução dentro de uma pasta
 
     robot -d ./logs tests/login.robot
+
+# Execução passando variáveis
+
+    robot -d ./logs -v browser:chromium -v headless:false tests\player.robot
